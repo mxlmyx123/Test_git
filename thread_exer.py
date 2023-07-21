@@ -1,5 +1,5 @@
 """
-    自定义进程类
+    自定义进程类 方案3
 """
 import time
 from multiprocessing import Process
@@ -19,9 +19,3 @@ class MyProcess(Process):
     def run(self):
         self.func1()
         self.func2()
-
-
-if __name__ == '__main__':
-    p = MyProcess("3")
-    p.start()
-    p.join()
