@@ -14,9 +14,7 @@ class MyProcess(Process):
         time.sleep(3)
         print("步骤1")
 
-    def func2(self):
-        time.sleep(3)
-        print("步骤2")
+
 
     def run(self):
         self.func1()
